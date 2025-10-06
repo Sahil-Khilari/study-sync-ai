@@ -2197,7 +2197,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 ```
 MIT License
 
-Copyright (c) 2025 Navnath Devkar & Sahil Khilari
+Copyright (c) 2025 Navnath Kadam & Sahil Khilari
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -2229,7 +2229,8 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
 
 **Sahil Khilari** | [@sahil-khilari](https://github.com/sahil-khilari)
 - 🎓 Computer Engineering Student
-- 💼 Team Member
+- 💼 Aspiring Full Stack Developer | Team Member
+- 🔭 Frontend Design, User Interaction, Chat Interface 
 - 📧 Email: khilarisahil786@gmail.com
 
 **Prathmesh Nitnaware** | [Prathmesh Nitnaware](https://github.com/prathmesh-nitnaware)
