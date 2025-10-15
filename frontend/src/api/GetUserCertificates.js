@@ -1,12 +1,10 @@
 import axios from "axios";
-import BaseUrl from "./BaseApiUrl.js";
 
-const FetchUserChatsApi = async ({ courseId , role  }) => {
+const GetUserCertificatesApi = async () => {
   try {
     const backendResponse = await axios.get(
-      `${BaseUrl}/api/v1/chat/fetch-chats`,
+      `http://localhost:5000/api/v1/certificate/get-user-certificates/`,
       {
-        params: { courseId , role },
         withCredentials: true,
         headers: {
           "Content-Type": "application/json",
@@ -14,14 +12,14 @@ const FetchUserChatsApi = async ({ courseId , role  }) => {
       }
     );
 
-    console.log("backendApiResponse for FetchUserChatsApi: ", backendResponse);
+    console.log("backendApiResponse GetUserActivitiesApi: ", backendResponse);
 
     return {
       status: backendResponse.status,
-      data: backendResponse.data.data, // Return the full data object
+      data: backendResponse.data.data,
     };
   } catch (err) {
-    console.log("Err in Getting Current Notes Api: ", err.message);
+    console.log("Err in GetUserActivitiesApi: ", err.message);
     return {
       status: err.response?.status || 500,
       data: err.response?.data || {},
@@ -30,6 +28,4 @@ const FetchUserChatsApi = async ({ courseId , role  }) => {
   }
 };
 
-export { FetchUserChatsApi };
-
-    
+export { GetUserCertificatesApi };
